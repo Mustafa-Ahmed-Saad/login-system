@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-dist/css/bootstrap.min.css"
+    />
+    <!-- myStyle -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons fontawsome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.4.0-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form mt-5 p-5 m-auto text-center text-white">
+        <h1 id="h1">Smart Login System</h1>
+
+        <!-- login page -->
+        <div id="login-container" class="d-none">
+          <input
+            class="w-100 my-2 p-2 rounded-1 text-white"
+            id="user-email-login"
+            type="email"
+            placeholder="Enter your email"
+          />
+          <input
+            class="w-100 my-2 p-2 rounded-1 text-white"
+            id="user-password-login"
+            type="password"
+            placeholder="Enter your password"
+          />
+          <p class="error-message"></p>
+          <button id="login" class="btn btn-outline-info w-100 my-3">
+            Login
+          </button>
+          <p id="errorMessage-login" class="text-danger"></p>
+          <p>
+            Don’t have an account?
+            <a
+              class="text-white text-decoration-none hover-underline"
+              href="#"
+              id="showSignupPage"
+              >Sign Up</a
+            >
+          </p>
+        </div>
+
+        <!-- signup page-->
+        <div id="signup-container">
+          <input
+            class="w-100 my-2 p-2 rounded-1 text-white"
+            id="user-name-signup"
+            type="text"
+            placeholder="Enter your name"
+          />
+          <input
+            class="w-100 my-2 p-2 rounded-1 text-white"
+            type="email"
+            id="user-email-signup"
+            placeholder="Enter your email"
+          />
+          <input
+            class="w-100 my-2 p-2 rounded-1 text-white"
+            type="password"
+            id="user-password-signup"
+            placeholder="Enter password"
+          />
+          <p class="error-message"></p>
+          <button id="btnSignup" class="btn btn-outline-info w-100 my-3">
+            Sign Up
+          </button>
+          <p id="errorMessage-signup" class="text-danger"></p>
+          <p>
+            have an account?
+            <a
+              class="text-white text-decoration-none hover-underline"
+              href="#"
+              id="showLoginPage"
+              >Signin</a
+            >
+          </p>
+        </div>
+
+        <!-- logout btn -->
+        <button
+          id="logout"
+          type="button"
+          class="btn btn-outline-warning d-none"
+        >
+          logout
+        </button>
+      </div>
+    </div>
+    <script src="./bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

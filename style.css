@@ -1,0 +1,32 @@
+body {
+  background-color: #24353f;
+}
+
+h1 {
+  color: #17a2b8;
+}
+
+.form {
+  max-width: 850px;
+
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+input {
+  background-color: #24353f;
+  border: 1px solid #fff;
+  outline: 0;
+  transition: 0.3s;
+}
+
+input:focus {
+  border: 1px solid #17a2b8;
+}
+
+input::placeholder {
+  color: rgb(192, 192, 192);
+}
+
+.hover-underline:hover {
+  text-decoration: underline !important;
+}
